@@ -27,7 +27,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     document.getElementById("user_div").style.display = "none";
     document.getElementById("login_div").style.display = "block";
-  // document.getElementById("user_para").style.display = "none";
+    document.getElementById("title-div").style.display = "none";
 
   }
 });
