@@ -11,6 +11,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     // User is signed in.
 
     document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
    
 
     var user = firebase.auth().currentUser;
