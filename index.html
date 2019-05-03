@@ -150,7 +150,7 @@
     var second = original[1].substring(0,3);
     var mod = first+second;
 
-    code = Math.floor(Math.random() * 1000) + 100;
+    code = Math.floor(Math.random() * 999) + 100;
 
     document.getElementById('codeTxt').value = mod+code;
 
@@ -240,7 +240,7 @@
     if null or invalid we dispaly a message.
     */
 
-    if(codeAuth.length === 5){
+    if(codeAuth.length === 9){
 
     //writting to puck
     Puck.write("setTimeout('NRF.setAdvertising([beacon.get(`RegFinished`)]);', 600000)\nNRF.setAdvertising([beacon.get('"+codeAuth+"')]);\n");
