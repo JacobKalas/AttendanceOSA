@@ -52,6 +52,7 @@ function login(){
 
 
 function logout(){
+  document.getElementById('tblText').innerHTML = " ";
   document.getElementById("table-div").style.display = "none";
   firebase.auth().signOut();
 }
