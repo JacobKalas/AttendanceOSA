@@ -52,7 +52,7 @@ function login(){
 
 
 function logout(){
-  document.getElementById('tblText').innerHTML = " ";
-    document.getElementById("table-div").style.display = "none";
+  document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
   firebase.auth().signOut();
 }
