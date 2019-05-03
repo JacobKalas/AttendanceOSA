@@ -52,7 +52,6 @@ function login(){
 
 
 function logout(){
-  document.getElementById("user_div").style.display = "block";
-    document.getElementById("login_div").style.display = "none";
+  document.getElementById("table-div").style.display = "none";
   firebase.auth().signOut();
 }
