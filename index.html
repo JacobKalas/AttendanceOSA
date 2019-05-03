@@ -102,7 +102,7 @@
 
     var rowIndex = 1;
 
-    databaseRef.once('value', function(snapshot) {
+    databaseRef.on('value', function(snapshot) {
 
     resetTable();
 
