@@ -85,7 +85,7 @@
     //creating reference to the database.
     var database = firebase.database();
     var x;
-    var text;
+    var mod;
     var code;
 
 
@@ -145,9 +145,14 @@
     //seting the input field. 
     function generateCode(){
 
-    code = Math.random().toString(36).substr(2, 5);
+      var original = x.match(/[A-Z][a-z]+/g);
+    var first = original[0].substring(0,3);
+    var second = original[1].substring(0,3);
+    var mod = first+second;
 
-    document.getElementById('codeTxt').value = code;
+    code = Math.floor(Math.random() * 1000) + 100;
+
+    document.getElementById('codeTxt').value = mod+code;
 
     }
 
