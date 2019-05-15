@@ -213,7 +213,7 @@
 
     function startRegistration(){
 
-    Puck.write("setTimeout('digitalWrite(LED3, 0);', 600000);\ndigitalWrite(LED3,1);\n digitalWrite(LED2, 0);\n");
+    Puck.write("setTimeout('digitalWrite(LED3, 0);', 120000);\ndigitalWrite(LED3,1);\n digitalWrite(LED2, 0);\n");
 
     setTimeout(closeCon, 10000);
 
@@ -243,7 +243,7 @@
     if(codeAuth.length === 9){
 
     //writting to puck
-    Puck.write("setTimeout('NRF.setAdvertising([beacon.get(`RegFinished`)]);', 600000)\nNRF.setAdvertising([beacon.get('"+codeAuth+"')]);\n");
+    Puck.write("setTimeout('NRF.setAdvertising([beacon.get(`RegFinished`)]);', 120000)\nNRF.setAdvertising([beacon.get('"+codeAuth+"')]);\n");
 
 
     //updating the ComputerSecurity table database value where name is 'CODE'
